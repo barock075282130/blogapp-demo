@@ -22,8 +22,6 @@ const Nav = () => {
                 <Link href='/' className='flex gap-2 flex-center'>
                     <p className='text-xl font-semibold'>Blog App (Demo)</p>
                 </Link>
-        
-                {/* Desktop Navigation */}
                     <div className='sm:flex hidden'>
                     {session?.user ? (
                         <div className='flex gap-4 md:gap-5'>
@@ -33,7 +31,6 @@ const Nav = () => {
                         <button type='button' onClick={signOut} className='bg-white/20 py-2 px-5 rounded-full hover:bg-red-600/60 duration-300'>
                             Sign Out
                         </button>
-            
                         <Link href='/profile'>
                             <Image
                             src={session?.user.image}
